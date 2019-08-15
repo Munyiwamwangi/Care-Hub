@@ -9,9 +9,11 @@ def get_quote():
    '''
    get_randomquotes_url = 'http://quotes.stormconsultancy.co.uk/random.json'
 
+
    with urllib.request.urlopen(get_randomquotes_url) as url:
-       quotes = url.read()
-       get_sources_response = json.loads(quotes)
-       print(quotes)
+    print(url)
+    quotes = url.read()
+    get_sources_response = json.loads(quotes)
+    print(quotes)
 
    return get_sources_response

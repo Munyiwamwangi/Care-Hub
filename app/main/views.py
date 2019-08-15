@@ -79,7 +79,7 @@ def about():
 
     """
     title = 'Facts'
-    return render_template("provider.html", title = title)
+    return render_template("about.html", title = title)
 
 #########*****************END ABOUT**********************************#############
 #######***************************************************************##############
